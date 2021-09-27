@@ -22,7 +22,7 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'psu-example'
+        app-name: 'rachPSU'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_514774c9fda941c5ab7929173db1eb20 }}
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
         package: ./pu
